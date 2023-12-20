@@ -33,6 +33,10 @@ for i in range(len(xtest)):
     print(f"House Age: {x_coord[0]} Nearest Train Station: {x_coord[1]} Number of Convenience Stores: {x_coord[2]} Actual: {actual} Predicted: {predicted_y}")
     print()
  
+test = [[20,870,5]]
+t = model.predict(test)
+t = np.around(t, 2)
+print(t)
  
 # Graphs
 
